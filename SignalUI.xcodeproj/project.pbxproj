@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		582A44012C145BD800A8E628 /* SignalUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582A44002C145BD800A8E628 /* SignalUIApp.swift */; };
-		582A44032C145BD800A8E628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582A44022C145BD800A8E628 /* ContentView.swift */; };
+		582A44032C145BD800A8E628 /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582A44022C145BD800A8E628 /* SignalView.swift */; };
 		582A44052C145BD900A8E628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582A44042C145BD900A8E628 /* Assets.xcassets */; };
 		582A44082C145BD900A8E628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582A44072C145BD900A8E628 /* Preview Assets.xcassets */; };
+		582A440F2C145C1100A8E628 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582A440E2C145C1100A8E628 /* CircleView.swift */; };
+		58C601D32C14D4350058AD0E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C601D22C14D4350058AD0E /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		582A43FD2C145BD800A8E628 /* SignalUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582A44002C145BD800A8E628 /* SignalUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalUIApp.swift; sourceTree = "<group>"; };
-		582A44022C145BD800A8E628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		582A44022C145BD800A8E628 /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
 		582A44042C145BD900A8E628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582A44072C145BD900A8E628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		582A440E2C145C1100A8E628 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		58C601D22C14D4350058AD0E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				582A44002C145BD800A8E628 /* SignalUIApp.swift */,
-				582A44022C145BD800A8E628 /* ContentView.swift */,
+				582A44022C145BD800A8E628 /* SignalView.swift */,
+				582A440E2C145C1100A8E628 /* CircleView.swift */,
+				58C601D22C14D4350058AD0E /* ButtonView.swift */,
 				582A44042C145BD900A8E628 /* Assets.xcassets */,
 				582A44062C145BD900A8E628 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582A44032C145BD800A8E628 /* ContentView.swift in Sources */,
+				582A44032C145BD800A8E628 /* SignalView.swift in Sources */,
+				582A440F2C145C1100A8E628 /* CircleView.swift in Sources */,
+				58C601D32C14D4350058AD0E /* ButtonView.swift in Sources */,
 				582A44012C145BD800A8E628 /* SignalUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +286,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +295,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.VladisRud.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +319,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +328,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.VladisRud.SignalUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

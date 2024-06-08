@@ -11,7 +11,7 @@ import SwiftUI
 struct SignalUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignalView()
         }
     }
 }
